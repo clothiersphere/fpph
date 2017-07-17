@@ -1,0 +1,1 @@
+export const IMAGES_SET = 'IMAGES_SET';

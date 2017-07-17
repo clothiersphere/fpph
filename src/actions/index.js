@@ -1,4 +1,4 @@
-export { imagesSet } from './images';
+import { setImages } from './images';
 
 export {
   setImages

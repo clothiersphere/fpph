@@ -13,7 +13,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    requestImg: bindActionCreators(actions.requestImg, dispatch)
+    requestImg: bindActionCreators(actions.setImages, dispatch)
   };
 }
 
