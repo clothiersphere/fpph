@@ -12,5 +12,5 @@ export default function(state = initialState, action) {
 
 function setImages(state, action) {
   const { images } = action;
-  return [...state, ...tracks ];
+  return [...state, ...images ];
 }
