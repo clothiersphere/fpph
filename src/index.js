@@ -8,6 +8,15 @@ import * as actions from './actions';
 import App from './components/App';
 import PlaceFood from './components/PlaceFood';
 
+const images = [
+  {
+    image: 'https://unsplash.it/100'
+  },
+  {
+    image: 'https://unsplash.it/200'
+  },
+]
+
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
