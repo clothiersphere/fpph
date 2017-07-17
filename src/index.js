@@ -20,6 +20,8 @@ const images = [
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
+store.dispatch(actions.setImages(images));
+
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>

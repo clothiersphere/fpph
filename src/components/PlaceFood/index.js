@@ -5,8 +5,9 @@ import * as actions from '../../actions';
 import PlaceFood from './presenter';
 
 function mapStateToProps(state) {
+  const images = state.image;
   return {
-
+    images
   };
 }
 
