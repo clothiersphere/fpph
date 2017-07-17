@@ -1,10 +1,17 @@
-* body {
-  margin: 0px;
+.textBox {
+  width: 300px;
+}
+.mainBody {
+/*  border-color: black;
+  border-style: dotted;*/
+  /*width: 100%;*/
 }
 
 .linkBox {
-  width: 60%;
   display: inline-block;
+ /* border-color: black;
+  border-style: solid;*/
+  width: 50%;
 }
 
 .largePicture {
