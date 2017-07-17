@@ -1,7 +1,7 @@
 import React from 'react';
 import ImgGenerator from './ImgGenerator';
 
-var PlaceFood = () => {
+function PlaceFood({images = [], requestImg }) {
   return (
     <div className="mainContainer">
       <div className="header">
@@ -28,6 +28,8 @@ var PlaceFood = () => {
         </div>
         <div className="largePicture">
           <ImgGenerator />
+          <button type="button" onClick={requestImg}>Make me Hungry
+          </button>
         </div>
     </div>
   </div>
