@@ -18,3 +18,13 @@
   display: inline-block;
   position: relative;
 }
+
+.leftSaltBae {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.rightSaltBae {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}

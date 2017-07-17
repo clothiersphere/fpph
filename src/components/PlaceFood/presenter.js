@@ -5,10 +5,10 @@ var PlaceFood = () => {
   return (
     <div className="mainContainer">
       <div className="header">
+        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'className="leftSaltBae"/>
         <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
         <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
-        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
-        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
+        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'className="rightSaltBae"/>
       </div>
       <div className="mainBody">
         
