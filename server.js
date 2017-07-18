@@ -1,5 +1,4 @@
 const express = require('express');
-const weather = require('./server/weather');
 
 const app = express();
 
