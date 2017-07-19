@@ -5,16 +5,20 @@ import * as actions from '../../actions';
 import PlaceFood from './presenter';
 
 function mapStateToProps(state) {
+
+  console.log(state, "STATE")
   const images = state.image;
+  const randomImage = state.setRandomImage;
+
   return {
-    images
+    images,
+    randomImage
   };
 }
 
-
 function mapDispatchToProps(dispatch) {
   return {
-    requestImg: bindActionCreators(actions.setImages, dispatch)
+    requestImg: bindActionCreators(actions.getRandomImage, dispatch)
   };
 }
 

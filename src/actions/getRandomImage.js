@@ -1,10 +1,10 @@
-import * as actionTypes from '../constants/actionTypes';
 import axios from 'axios';
+import * as actionTypes from '../constants/actionTypes';
 
-function randomImageSet(image) {
+function randomImageSet(images) {
   return {
     type: actionTypes.RANDOMIMAGE_SET,
-    image
+    images
   };
 };
 
