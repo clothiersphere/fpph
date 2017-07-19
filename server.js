@@ -10,7 +10,7 @@ app.get('/jerk', function (req, res) {
   res.send('Hello JERK!')
 })
 
-app.get('/api/getRandomImage', unpack.getRandomImage)
+app.get('/api/getRandomImage', unsplash.getRandomImage)
 
 app.listen(1234, () => {
   console.log('%s listening at %s', app.name, app.url);
