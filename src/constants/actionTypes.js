@@ -1,1 +1,2 @@
 export const IMAGES_SET = 'IMAGES_SET';
+export const RANDOMIMAGE_SET = 'RANDOMIMAGE_SET';

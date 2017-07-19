@@ -3,7 +3,7 @@ import ImgGenerator from './ImgGenerator';
 
 function PlaceFood({images = [], requestImg }) {
   
-  function doSomething(e) {
+  function prevDefault(e) {
     alert('itwork')
     e.preventDefault();
   }
@@ -21,15 +21,15 @@ function PlaceFood({images = [], requestImg }) {
         <div className="linkBox">
         {images.map((image, key) => {
           return  <div key={key}> 
-            <img src={image.image}/>
-            <form onSubmit={doSomething}>
-              <input type="text" name="textBox" className="textBox" value={image.image}/>
+            <img src={image.image} />
+            <form> 
+              <input type="text" name="textBox" className="textBox" value={image.image} readOnly />
             </form> 
           </div>
         })}
         </div>
         <div className="largePicture">
-          <ImgGenerator />
+          <ImgGenerator images={images} />
           <button type="button" onClick={requestImg}>Make me Hungry
           </button>
         </div>
