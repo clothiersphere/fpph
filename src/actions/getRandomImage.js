@@ -11,7 +11,7 @@ function randomImageSet(image) {
 export function getRandomImage() {
   return function(dispatch) {
     const request = axios({
-      method: 'GET'.
+      method: 'GET',
       url: 'http://localhost:8080/api/getRandomImage'
     });
     return request
