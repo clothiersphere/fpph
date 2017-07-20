@@ -3,6 +3,8 @@ import ImgGenerator from './ImgGenerator';
 
 function PlaceFood({images = [], setRandomImage, requestImg }) {
   
+  console.log(setRandomImage, "setRandomImage")
+
   function prevDefault(e) {
     alert('itwork')
     e.preventDefault();
@@ -30,7 +32,7 @@ function PlaceFood({images = [], setRandomImage, requestImg }) {
         </div>
         <div className="largePicture">
           <ImgGenerator setRandomImage={setRandomImage} />
-          <button type="button" onClick={requestImg}>Make me Hungry
+          <button type="button" onClick={requestImg}>Generate Random FoodPorn Placeholder
           </button>
         </div>
     </div>

@@ -8,11 +8,11 @@ function mapStateToProps(state) {
 
   console.log(state, "STATE")
   const images = state.image;
-  const randomImage = state.setRandomImage;
+  const setRandomImage = state.setRandomImage;
 
   return {
     images,
-    randomImage
+    setRandomImage
   };
 }
 
