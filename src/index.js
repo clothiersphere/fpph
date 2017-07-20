@@ -21,7 +21,7 @@ const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
 store.dispatch(actions.setImages(images));
-store.dispatch(actions.getRandomImage());
+// store.dispatch(actions.getRandomImage());
 
 ReactDOM.render(
   <Provider store={store}>

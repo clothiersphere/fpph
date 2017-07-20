@@ -1,7 +1,7 @@
 import React from 'react';
 import ImgGenerator from './ImgGenerator';
 
-function PlaceFood({images = [], requestImg }) {
+function PlaceFood({images = [], setRandomImage, requestImg }) {
   
   function prevDefault(e) {
     alert('itwork')
@@ -29,7 +29,7 @@ function PlaceFood({images = [], requestImg }) {
         })}
         </div>
         <div className="largePicture">
-          <ImgGenerator images={images} />
+          <ImgGenerator setRandomImage={setRandomImage} />
           <button type="button" onClick={requestImg}>Make me Hungry
           </button>
         </div>

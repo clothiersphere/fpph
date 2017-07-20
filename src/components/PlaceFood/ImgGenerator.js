@@ -1,12 +1,17 @@
 import React from 'react';
 
-var ImgGenerator = () => {
+var ImgGenerator = (setRandomImage) => {
   
-  return (
-    <div>
-      <img src="https://unsplash.it/200/300"/>
-    </div>
-  )
+  if (setRandomImage[0]) {
+    return (
+      <div>
+        <img src={setRandomImage.urls.small}/>
+      </div>
+    )  
+  } else {
+    return <div> loading..</div>
+  }
+  
 }
 
 export default ImgGenerator;
