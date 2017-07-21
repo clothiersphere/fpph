@@ -18,7 +18,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    requestImg: bindActionCreators(actions.getRandomImage, dispatch)
+    getRandomImage: bindActionCreators(actions.getRandomImage, dispatch)
+    // getRandomFruitImage: bindActionCreators(actions.getRandomFruitImage, dispatch)
   };
 }
 

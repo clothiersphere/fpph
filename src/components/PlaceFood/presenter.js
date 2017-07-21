@@ -1,7 +1,7 @@
 import React from 'react';
 import ImgGenerator from './ImgGenerator';
 
-function PlaceFood({images = [], setRandomImage, requestImg }) {
+function PlaceFood({images = [], setRandomImage, getRandomImage }) {
   
   console.log(setRandomImage, "setRandomImage")
 
@@ -31,8 +31,10 @@ function PlaceFood({images = [], setRandomImage, requestImg }) {
         })}
         </div>
         <div className="largePicture">
+          <img src={`/api/getRandomImage/100/200`} />
           <ImgGenerator setRandomImage={setRandomImage} />
-          <button type="button" onClick={requestImg}>Generate Random FoodPorn Placeholder
+          <button type="button" onClick={getRandomImage}>Generate Random FoodPorn Placeholder
+
           </button>
         </div>
     </div>
@@ -41,3 +43,5 @@ function PlaceFood({images = [], setRandomImage, requestImg }) {
 }
 
 export default PlaceFood;
+
+        // <button type="button" onClick={getRandomFruitImage}>Generate Random FoodPorn Placeholder

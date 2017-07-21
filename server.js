@@ -12,12 +12,10 @@ app.get('/jerk', function (req, res) {
   res.send('Hello JERK!')
 })
 
+app.get('/api/getRandomImage/:width', unsplash.getRandomImage)
+app.get('/api/getRandomImage/:width/:height', unsplash.getRandomImage)
 app.get('/api/getRandomImage', unsplash.getRandomImage)
 
-// Route path: /api/getImage/:width/:height
-//             /api/getImage/fruit/:width/:height
-//             /api/getImage/dessert/:width/:height    
-       
 
 app.listen(1234, () => {
   console.log('%s listening at %s', app.name, app.url);
