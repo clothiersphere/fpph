@@ -26,11 +26,24 @@ function PlaceFood({images = [], setRandomImage, getRandomImage }) {
     <div className="mainContainer">
       <div className="splash">
         <div className="row">
-          <h1 className="siteName">FoodPorn Placeholder Generator</h1>
+          <h1 className="siteName">food porn placeholder generator</h1>
+          <h2> make it tasty </h2>
         </div>
         <div className="row">
           <form> 
             <input type="text" name="textBox" className="textBox" value={`/api/getRandomImage/200`} readOnly />
+          </form>
+        </div>
+        <div className="row">
+          <h2> make it fruity </h2>
+          <form> 
+            <input type="text" name="textBox" className="textBox" value={`/api/getRandomImage/200/300`} readOnly />
+          </form>
+        </div>
+         <div className="row">
+          <h2> make it sweet </h2>
+          <form> 
+            <input type="text" name="textBox" className="textBox" value={`/api/getRandomImage/200/300`} readOnly />
           </form>
         </div>
       </div>
