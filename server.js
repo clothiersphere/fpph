@@ -12,9 +12,10 @@ app.get('/jerk', function (req, res) {
   res.send('Hello JERK!')
 })
 
+app.get('/api/getRandomImage', unsplash.getRandomImage)
 app.get('/api/getRandomImage/:width', unsplash.getRandomImage)
 app.get('/api/getRandomImage/:width/:height', unsplash.getRandomImage)
-app.get('/api/getRandomImage', unsplash.getRandomImage)
+
 
 
 app.listen(1234, () => {

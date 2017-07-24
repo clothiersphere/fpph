@@ -23,8 +23,11 @@ function getRandomImage(req, res, next) {
 
   axios.get(url).then(response => response.data)
   .then((data) => {
-    // res.send(data);
-    res.redirect(data.urls.custom);
+    if (data.urls.custom) {
+      res.redirect(data.urls.custom)
+    } else {
+      res.send(data);
+    }
     next();
   })
   .catch((error) => {

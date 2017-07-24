@@ -31,7 +31,7 @@ function PlaceFood({images = [], setRandomImage, getRandomImage }) {
         })}
         </div>
         <div className="largePicture">
-          <img src={`/api/getRandomImage/100/200`} />
+          
           <ImgGenerator setRandomImage={setRandomImage} />
           <button type="button" onClick={getRandomImage}>Generate Random FoodPorn Placeholder
 
@@ -43,5 +43,4 @@ function PlaceFood({images = [], setRandomImage, getRandomImage }) {
 }
 
 export default PlaceFood;
-
-        // <button type="button" onClick={getRandomFruitImage}>Generate Random FoodPorn Placeholder
+// <img src={`/api/getRandomImage/100/200`} />
