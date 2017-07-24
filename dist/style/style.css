@@ -2,9 +2,24 @@
   width: 300px;
 }
 .mainBody {
+  background-color: black;
 /*  border-color: black;
   border-style: dotted;*/
   /*width: 100%;*/
+}
+h1 {
+  color:white;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+.splash {
+  height: 100vh;
+  background-image: url("https://source.unsplash.com/zhO4JJv0zi4/1600x900");
 }
 
 .linkBox {

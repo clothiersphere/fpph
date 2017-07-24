@@ -13,7 +13,8 @@ function getRandomImage(req, res, next) {
 
   if (req.params.width) {
     width = `&w=${req.params.width}`;
-    url = api+options+clientId+width;
+    height = `&h=${req.params.width}`;
+    url = api+options+clientId+width+height;
     
   }
   if (req.params.height) {

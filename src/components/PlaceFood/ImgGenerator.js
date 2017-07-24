@@ -1,6 +1,9 @@
 import React from 'react';
 
 function ImgGenerator({setRandomImage = {}}) {
+  
+  const dummy = 'https://unsplash.it/200/300/?random';
+
   if (setRandomImage.urls) {
     return (
       <div>
@@ -11,9 +14,15 @@ function ImgGenerator({setRandomImage = {}}) {
       </div>
     )  
   } else {
-    return <div> loading..</div>
+    return (
+      <div> 
+        <img src={dummy}/>
+        <form> 
+          <input type="text" name="textBox" className="textBox" value={dummy} readOnly />
+        </form> 
+      </div>
+    )
   }
-  
 }
 
 export default ImgGenerator;

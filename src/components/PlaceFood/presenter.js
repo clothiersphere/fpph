@@ -10,31 +10,44 @@ function PlaceFood({images = [], setRandomImage, getRandomImage }) {
     e.preventDefault();
   }
 
+  function header() {
+    return   (
+      <div className="header">
+      <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'className="leftSaltBae"/>
+      <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
+      <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
+      <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'className="rightSaltBae"/>
+    </div>
+    )
+  }
+  // {header()}
+
   return (
     <div className="mainContainer">
-      <div className="header">
-        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'className="leftSaltBae"/>
-        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
-        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'/>
-        <img src={require(`../../../dist/img/placeholder.jpg`)} height='25%' width='25%'className="rightSaltBae"/>
+      <div className="splash">
+        <div className="row">
+          <h1 className="siteName">FoodPorn Placeholder Generator</h1>
+        </div>
+        <div className="row">
+          <form> 
+            <input type="text" name="textBox" className="textBox" value={`/api/getRandomImage/200`} readOnly />
+          </form>
+        </div>
       </div>
       <div className="mainBody">
-        
         <div className="linkBox">
-        {images.map((image, key) => {
-          return  <div key={key}> 
-            <img src={image.image} />
-            <form> 
-              <input type="text" name="textBox" className="textBox" value={image.image} readOnly />
-            </form> 
-          </div>
-        })}
+          <img src={`https://unsplash.it/200/?random`} />
+          <form> 
+            <input type="text" name="textBox" className="textBox" value={`/api/getRandomImage/200`} readOnly />
+          </form> 
+          <img src={`https://unsplash.it/300/?random`} />
+          <form> 
+            <input type="text" name="textBox2" className="textBox" value={`/api/getRandomImage/200/300`} readOnly />
+          </form> 
         </div>
         <div className="largePicture">
-          
           <ImgGenerator setRandomImage={setRandomImage} />
           <button type="button" onClick={getRandomImage}>Generate Random FoodPorn Placeholder
-
           </button>
         </div>
     </div>
@@ -43,4 +56,22 @@ function PlaceFood({images = [], setRandomImage, getRandomImage }) {
 }
 
 export default PlaceFood;
-// <img src={`/api/getRandomImage/100/200`} />
+
+
+// {images.map((image, key) => {
+//   return  <div key={key}> 
+//     <img src={image.image} />
+//     <form> 
+//       <input type="text" name="textBox" className="textBox" value={image.image} readOnly />
+//     </form> 
+//   </div>
+// })}
+
+// <img src={`/api/getRandomImage/200`} />
+// <form> 
+//  <input type="text" name="textBox" className="textBox" value={`/api/getRandomImage/200`} readOnly />
+// </form> 
+// <img src={`/api/getRandomImage/200/300`} />
+// <form> 
+//  <input type="text" name="textBox2" className="textBox" value={`/api/getRandomImage/200/300`} readOnly />
+// </form> 
